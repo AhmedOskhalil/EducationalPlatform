@@ -10,4 +10,6 @@ public class Category : BaseAuditableEntity
 
     public string? ThumbnailUrl { get; set; }
     public bool IsActive { get; set; } = true;
+    public ICollection<Course> Courses { get; set; } = new List<Course>();
+
 }
