@@ -1,26 +1,5 @@
-# Build folders
-bin/
-obj/
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
 
-# Visual Studio
-.vs/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-
-# Rider
-.idea/
-
-# VS Code
-.vscode/
-
-# NuGet
-packages/
-
-# Logs
-*.log
-
-# OS files
-Thumbs.db
-Desktop.ini
+/.vs/EducationalPlatform.slnx
