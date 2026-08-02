@@ -1,9 +1,3 @@
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.AssemblyInfo.cs
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.sourcelink.json
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\bin\Debug\net10.0\EducationalPlatform.Infrastructure.deps.json
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\bin\Debug\net10.0\EducationalPlatform.Infrastructure.runtimeconfig.json
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\bin\Debug\net10.0\EducationalPlatform.Infrastructure.dll
@@ -12,6 +6,12 @@ C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastru
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\bin\Debug\net10.0\EducationalPlatform.Domain.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\bin\Debug\net10.0\EducationalPlatform.Application.pdb
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\bin\Debug\net10.0\EducationalPlatform.Domain.pdb
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.AssemblyInfo.cs
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.sourcelink.json
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\Educatio.F22A3624.Up2Date
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\EducationalPlatform.Infrastructure.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Infrastructure\obj\Debug\net10.0\refint\EducationalPlatform.Infrastructure.dll

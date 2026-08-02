@@ -17,6 +17,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Section> Sections => Set<Section>();
     public DbSet<Lesson> Lessons => Set<Lesson>();
     public DbSet<LessonContent> LessonContents => Set<LessonContent>();
+    public DbSet<Enrollment> Enrollments => Set<Enrollment>();
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

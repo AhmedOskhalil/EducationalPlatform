@@ -1,12 +1,12 @@
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.deps.json
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.dll
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.pdb
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.csproj.AssemblyReference.cache
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.AssemblyInfoInputs.cache
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.AssemblyInfo.cs
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.csproj.CoreCompileInputs.cache
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.sourcelink.json
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.deps.json
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.dll
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.pdb
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\refint\EducationalPlatform.Domain.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.pdb

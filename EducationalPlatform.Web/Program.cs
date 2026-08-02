@@ -1,5 +1,6 @@
 using EducationalPlatform.Infrastructure.Data;
 using EducationalPlatform.Infrastructure.Identity;
+using EducationalPlatform.Infrastructure.Identity.Seed;
 using EducationalPlatform.Web.Components;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +9,7 @@ namespace EducationalPlatform.Web
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,17 @@ namespace EducationalPlatform.Web
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
             var app = builder.Build();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+
+                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+                var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+
+                await RoleSeeder.SeedAsync(roleManager);
+                await AdminSeeder.SeedAsync(userManager);
+            }
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -40,7 +52,7 @@ namespace EducationalPlatform.Web
             app.MapRazorComponents<App>()
                 .AddInteractiveServerRenderMode();
 
-            app.Run();
+            await app.RunAsync();
         }
     }
 }

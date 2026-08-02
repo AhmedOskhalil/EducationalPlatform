@@ -32,4 +32,6 @@ public class Course : BaseAuditableEntity
     public ICollection<CourseInstructor> CourseInstructors { get; set; } = new List<CourseInstructor>();
 
     public ICollection<Section> Sections { get; set; } = new List<Section>();
+
+    public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();  
 }

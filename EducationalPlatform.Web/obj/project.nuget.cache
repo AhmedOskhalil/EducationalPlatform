@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xTOI0AvTSQs=",
+  "dgSpecHash": "/1X5RpBvoCg=",
   "success": true,
   "projectFilePath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,7 @@
     "C:\\Users\\78sworks\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\mediatr\\14.2.0\\mediatr.14.2.0.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512",
+    "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.10\\microsoft.aspnetcore.app.internal.assets.10.0.10.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\10.0.10\\microsoft.aspnetcore.components.authorization.10.0.10.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.10.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
@@ -64,7 +64,7 @@
     {
       "code": "NU1510",
       "level": "Warning",
-      "message": "PackageReference Microsoft.AspNetCore.Components.Authorization will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "message": "PackageReference Microsoft.AspNetCore.Components.Authorization will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.",
       "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",

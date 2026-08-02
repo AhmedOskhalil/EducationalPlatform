@@ -1,8 +1,8 @@
-C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.server.js
-C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\build\..\_framework\blazor.web.js
+C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.server.js
+C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\build\..\_framework\blazor.web.js
 Components\Layout\ReconnectModal.razor.js
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.server.js
+C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.server.js
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
@@ -39,7 +39,7 @@ C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwro
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.3\_framework\blazor.web.js
+C:\Users\78sworks\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.10\_framework\blazor.web.js
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
