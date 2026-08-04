@@ -46,7 +46,9 @@ namespace EducationalPlatform.Web
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
             builder.Services.AddAuthorization();
-            
+
+            builder.Services.AddScoped<ICourseService, CourseService>();
+
             builder.Services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = "/login";
