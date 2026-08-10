@@ -165,6 +165,60 @@ namespace EducationalPlatform.Infrastructure.Migrations
                     b.ToTable("CourseInstructor");
                 });
 
+            modelBuilder.Entity("EducationalPlatform.Domain.Entities.Enrollment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("EnrolledAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ExpireAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<bool>("IsCompleted")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("ProgressPercentage")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<string>("StudentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Enrollments", (string)null);
+                });
+
             modelBuilder.Entity("EducationalPlatform.Domain.Entities.Lesson", b =>
                 {
                     b.Property<int>("Id")
@@ -549,6 +603,17 @@ namespace EducationalPlatform.Infrastructure.Migrations
                     b.Navigation("Course");
                 });
 
+            modelBuilder.Entity("EducationalPlatform.Domain.Entities.Enrollment", b =>
+                {
+                    b.HasOne("EducationalPlatform.Domain.Entities.Course", "Course")
+                        .WithMany("Enrollments")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
             modelBuilder.Entity("EducationalPlatform.Domain.Entities.Lesson", b =>
                 {
                     b.HasOne("EducationalPlatform.Domain.Entities.Section", "Section")
@@ -641,6 +706,8 @@ namespace EducationalPlatform.Infrastructure.Migrations
             modelBuilder.Entity("EducationalPlatform.Domain.Entities.Course", b =>
                 {
                     b.Navigation("CourseInstructors");
+
+                    b.Navigation("Enrollments");
 
                     b.Navigation("Sections");
                 });

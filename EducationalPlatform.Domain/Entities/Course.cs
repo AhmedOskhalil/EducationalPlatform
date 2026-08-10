@@ -1,6 +1,5 @@
 ﻿using EducationalPlatform.Domain.Common;
 using EducationalPlatform.Domain.Enums;
-using static System.Collections.Specialized.BitVector32;
 
 namespace EducationalPlatform.Domain.Entities;
 
@@ -25,13 +24,17 @@ public class Course : BaseAuditableEntity
     public CourseDeliveryType DeliveryType { get; set; }
 
     public CourseStatus Status { get; set; } = CourseStatus.Draft;
+
     public int CategoryId { get; set; }
 
     public Category Category { get; set; } = null!;
 
-    public ICollection<CourseInstructor> CourseInstructors { get; set; } = new List<CourseInstructor>();
+    public ICollection<CourseInstructor> CourseInstructors { get; set; }
+        = new List<CourseInstructor>();
 
-    public ICollection<Section> Sections { get; set; } = new List<Section>();
+    public ICollection<Section> Sections { get; set; }
+        = new List<Section>();
 
-    public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();  
+    public ICollection<Enrollment> Enrollments { get; set; }
+        = new List<Enrollment>();
 }

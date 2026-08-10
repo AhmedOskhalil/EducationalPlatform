@@ -1,9 +1,10 @@
 ﻿using FluentValidation;
 using MediatR;
 
-namespace EducationalPlatform.Application.Behaviors;
+namespace EducationalPlatform.Application.Common.Behaviors;
 
-public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+public class ValidationBehavior<TRequest, TResponse>
+    : IPipelineBehavior<TRequest, TResponse>
     where TRequest : notnull
 {
     private readonly IEnumerable<IValidator<TRequest>> _validators;
@@ -20,23 +21,27 @@ public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TReques
     {
         if (!_validators.Any())
         {
-            return await next();
+            return await next(cancellationToken);
         }
 
         var context = new ValidationContext<TRequest>(request);
 
-        var validationResults = await Task.WhenAll( _validators.Select(v => v.ValidateAsync(context, cancellationToken)));
+        var validationResults = await Task.WhenAll(
+            _validators.Select(
+                validator => validator.ValidateAsync(
+                    context,
+                    cancellationToken)));
 
         var failures = validationResults
-            .SelectMany(r => r.Errors)
-            .Where(f => f != null)
+            .SelectMany(result => result.Errors)
+            .Where(error => error is not null)
             .ToList();
 
-        if (failures.Any())
+        if (failures.Count != 0)
         {
             throw new ValidationException(failures);
         }
 
-        return await next();
+        return await next(cancellationToken);
     }
 }

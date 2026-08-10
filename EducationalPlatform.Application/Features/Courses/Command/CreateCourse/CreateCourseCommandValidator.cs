@@ -1,10 +1,11 @@
-﻿using FluentValidation;
+﻿using EducationalPlatform.Application.Interfaces;
+using FluentValidation;
 
 namespace EducationalPlatform.Application.Features.Courses.Commands.CreateCourse;
 
 public class CreateCourseCommandValidator : AbstractValidator<CreateCourseCommand>
 {
-    public CreateCourseCommandValidator()
+    public CreateCourseCommandValidator(IRepository<Domain.Entities.Course> courseRepository)
     {
         RuleFor(x => x.Title)
             .NotEmpty()
@@ -12,7 +13,10 @@ public class CreateCourseCommandValidator : AbstractValidator<CreateCourseComman
 
         RuleFor(x => x.Slug)
             .NotEmpty()
-            .MaximumLength(200);
+            .MaximumLength(200).MustAsync(async (slug, cancellationToken) =>
+                !await courseRepository.ExistsAsync(
+                    x => x.Slug == slug))
+            .WithMessage("A course with this slug already exists."); ;
 
         RuleFor(x => x.ShortDescription)
             .MaximumLength(500);
@@ -25,5 +29,7 @@ public class CreateCourseCommandValidator : AbstractValidator<CreateCourseComman
 
         RuleFor(x => x.CategoryId)
             .NotEmpty();
+
+
     }
 }

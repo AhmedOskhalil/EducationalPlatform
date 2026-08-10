@@ -16,7 +16,6 @@ C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\D
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\Debug\net10.0\Humanizer.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\Debug\net10.0\MediatR.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\Debug\net10.0\MediatR.Contracts.dll
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\Debug\net10.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
@@ -225,3 +224,4 @@ C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\D
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\EducationalPlatform.Web.pdb
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\EducationalPlatform.Web.genruntimeconfig.cache
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\ref\EducationalPlatform.Web.dll
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

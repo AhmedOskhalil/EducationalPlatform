@@ -21,4 +21,8 @@
     <ProjectReference Include="..\EducationalPlatform.Infrastructure\EducationalPlatform.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Components\Pages\admin\" />
+  </ItemGroup>
+
 </Project>

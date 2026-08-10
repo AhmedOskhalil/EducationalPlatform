@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6w7GleCjbqg=",
+  "dgSpecHash": "o42f+Ap79G4=",
   "success": true,
   "projectFilePath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "C:\\Users\\78sworks\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\mediatr\\14.2.0\\mediatr.14.2.0.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\78sworks\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.10\\microsoft.entityframeworkcore.10.0.10.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.10\\microsoft.entityframeworkcore.abstractions.10.0.10.nupkg.sha512",
     "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.10\\microsoft.entityframeworkcore.analyzers.10.0.10.nupkg.sha512",
@@ -28,18 +27,6 @@
     "C:\\Users\\78sworks\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.14.0\\microsoft.identitymodel.tokens.8.14.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 14.2.0 was resolved.",
-      "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
     {
       "code": "NU1903",
       "level": "Warning",

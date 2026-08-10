@@ -1,0 +1,207 @@
+﻿@page "/courses/edit/{Id:int}"
+@using EducationalPlatform.Application.Features.Categories.Queries.GetCategories
+@using EducationalPlatform.Application.Features.Courses.Commands.UpdateCourse
+@using EducationalPlatform.Application.Features.Courses.Queries.GetCourseById
+@using EducationalPlatform.Domain.Entities
+@using EducationalPlatform.Domain.Enums
+@using MediatR
+
+@inject IMediator Mediator
+
+@rendermode InteractiveServer
+
+<h3>Edit Course</h3>
+
+@if (isLoading)
+{
+    <p>Loading...</p>
+}
+else if (course is null)
+{
+    <p>Course not found.</p>
+}
+else
+{
+    <EditForm Model="model" OnValidSubmit="UpdateCourse">
+        <div>
+            <label>Title</label>
+            <InputText @bind-Value="model.Title" />
+
+            @if (validationErrors.TryGetValue("Title", out var titleError))
+            {
+                <div class="text-danger">@titleError</div>
+            }
+        </div>
+
+        <div>
+            <label>Slug</label>
+            <InputText @bind-Value="model.Slug" />
+
+            @if (validationErrors.TryGetValue("Slug", out var slugError))
+            {
+                <div class="text-danger">@slugError</div>
+            }
+        </div>
+
+        <div>
+            <label>Short Description</label>
+            <InputText @bind-Value="model.ShortDescription" />
+        </div>
+
+        <div>
+            <label>Description</label>
+            <InputTextArea @bind-Value="model.Description" />
+        </div>
+
+        <div>
+            <label>Price</label>
+            <InputNumber @bind-Value="model.Price" />
+
+            @if (validationErrors.TryGetValue("Price", out var priceError))
+            {
+                <div class="text-danger">@priceError</div>
+            }
+        </div>
+
+        <div>
+            <label>Category</label>
+
+            <InputSelect @bind-Value="model.CategoryId">
+                <option value="0">-- Select Category --</option>
+
+                @foreach (var category in categories)
+                {
+                    <option value="@category.Id">
+                        @category.Name
+                    </option>
+                }
+            </InputSelect>
+
+            @if (validationErrors.TryGetValue("CategoryId", out var categoryError))
+            {
+                <div class="text-danger">@categoryError</div>
+            }
+        </div>
+
+        <div>
+            <label>Difficulty</label>
+            <InputSelect @bind-Value="model.Difficulty">
+                @foreach (var difficulty in Enum.GetValues<CourseDifficulty>())
+                {
+                    <option value="@difficulty">@difficulty</option>
+                }
+            </InputSelect>
+        </div>
+
+        <div>
+            <label>Delivery Type</label>
+            <InputSelect @bind-Value="model.DeliveryType">
+                @foreach (var deliveryType in Enum.GetValues<CourseDeliveryType>())
+                {
+                    <option value="@deliveryType">@deliveryType</option>
+                }
+            </InputSelect>
+        </div>
+
+        @if (!string.IsNullOrWhiteSpace(message))
+        {
+            <div>@message</div>
+        }
+
+        <button type="submit" disabled="@isSaving">
+            @(isSaving ? "Saving..." : "Save Changes")
+        </button>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Course? course;
+    private IReadOnlyList<Category> categories = [];
+    private bool isLoading = true;
+    private bool isSaving;
+
+    private string message = string.Empty;
+    
+    private Dictionary<string, string> validationErrors = new();
+
+    private CourseModel model = new();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await Mediator.Send(new GetCategoriesQuery());
+
+        course = await Mediator.Send(
+            new GetCourseByIdQuery(Id));
+
+        if (course is not null)
+        {
+            model = new CourseModel
+            {
+                Title = course.Title,
+                Slug = course.Slug,
+                ShortDescription = course.ShortDescription,
+                Description = course.Description,
+                Price = course.Price,
+                CategoryId = course.CategoryId,
+                Difficulty = course.Difficulty,
+                DeliveryType = course.DeliveryType
+            };
+        }
+
+        isLoading = false;
+    }
+    private async Task UpdateCourse()
+    {
+        validationErrors.Clear();
+        message = string.Empty;
+
+        try
+        {
+            isSaving = true;
+
+            var command = new UpdateCourseCommand(
+                Id,
+                model.Title,
+                model.Slug,
+                model.ShortDescription,
+                model.Description,
+                model.Price,
+                model.CategoryId,
+                model.Difficulty,
+                model.DeliveryType);
+
+            var result = await Mediator.Send(command);
+
+            message = result.Message;
+        }
+        catch (FluentValidation.ValidationException ex)
+        {
+            validationErrors = ex.Errors
+                .GroupBy(x => x.PropertyName)
+                .ToDictionary(
+                    x => x.Key,
+                    x => x.First().ErrorMessage);
+        }
+        finally
+        {
+            isSaving = false;
+        }
+    }
+
+    private class CourseModel
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Slug { get; set; } = string.Empty;
+        public string ShortDescription { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public decimal Price { get; set; }
+        public int CategoryId { get; set; }
+        public CourseDifficulty Difficulty { get; set; }
+        public CourseDeliveryType DeliveryType { get; set; }
+    }
+}
+

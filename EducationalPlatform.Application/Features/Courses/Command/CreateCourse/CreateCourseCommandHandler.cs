@@ -13,7 +13,7 @@ public class CreateCourseCommandHandler
         _courseService = courseService;
     }
 
-    public async Task<CreateCourseResponse> Handle(CreateCourseCommand request, CancellationToken cancellationToken)
+    public async Task<CreateCourseResponse> Handle( CreateCourseCommand request, CancellationToken cancellationToken)
     {
         return await _courseService.CreateCourseAsync(request);
     }

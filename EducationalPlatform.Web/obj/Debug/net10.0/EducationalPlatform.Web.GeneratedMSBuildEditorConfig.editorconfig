@@ -35,24 +35,24 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/admin/Courses/Create.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xhZG1pblxDb3Vyc2VzXENyZWF0ZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/admin/Courses/Delete.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xhZG1pblxDb3Vyc2VzXERlbGV0ZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/admin/Courses/Edit.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xhZG1pblxDb3Vyc2VzXEVkaXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/admin/Courses/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xhZG1pblxDb3Vyc2VzXEluZGV4LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/Courses/Courses.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3Vyc2VzXENvdXJzZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/Courses/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3Vyc2VzXENyZWF0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/Courses/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3Vyc2VzXERlbGV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/Courses/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3Vyc2VzXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/78sworks/source/repos/EducationalPlatform/EducationalPlatform.Web/Components/Pages/Error.razor]

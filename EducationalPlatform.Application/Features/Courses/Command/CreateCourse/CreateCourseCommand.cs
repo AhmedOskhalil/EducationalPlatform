@@ -9,7 +9,7 @@ public record CreateCourseCommand(
     string ShortDescription,
     string Description,
     decimal Price,
-    Guid CategoryId,
+    int CategoryId,
     CourseDifficulty Difficulty,
     CourseDeliveryType DeliveryType
 ) : IRequest<CreateCourseResponse>;
