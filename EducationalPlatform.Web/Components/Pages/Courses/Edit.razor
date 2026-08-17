@@ -1,4 +1,5 @@
 ﻿@page "/courses/edit/{Id:int}"
+@using EducationalPlatform.Application.DTOs
 @using EducationalPlatform.Application.Features.Categories.Queries.GetCategories
 @using EducationalPlatform.Application.Features.Courses.Commands.UpdateCourse
 @using EducationalPlatform.Application.Features.Courses.Queries.GetCourseById
@@ -118,7 +119,7 @@ else
     [Parameter]
     public int Id { get; set; }
 
-    private Course? course;
+    private CourseDetailsDto? course;
     private IReadOnlyList<Category> categories = [];
     private bool isLoading = true;
     private bool isSaving;

@@ -6,7 +6,7 @@ using MediatR;
 namespace EducationalPlatform.Application.Features.Courses.Queries.GetCourseById;
 
 public class GetCourseByIdQueryHandler
-    : IRequestHandler<GetCourseByIdQuery, Course?>
+    : IRequestHandler<GetCourseByIdQuery, CourseDetailsDto?>
 {
     private readonly IRepository<Course> _courseRepository;
 
@@ -16,8 +16,27 @@ public class GetCourseByIdQueryHandler
         _courseRepository = courseRepository;
     }
 
-    public async Task<Course?> Handle(GetCourseByIdQuery request, CancellationToken cancellationToken)
+    public async Task<CourseDetailsDto?> Handle(
+        GetCourseByIdQuery request,
+        CancellationToken cancellationToken)
     {
-        return await _courseRepository.GetByIdAsync(request.Id);
+        var course = await _courseRepository.GetByIdAsync(request.Id);
+
+        if (course is null)
+            return null;
+
+        return new CourseDetailsDto
+        {
+            Id = course.Id,
+            Title = course.Title,
+            Slug = course.Slug,
+            ShortDescription = course.ShortDescription,
+            Description = course.Description,
+            Price = course.Price,
+            Difficulty = course.Difficulty,
+            DeliveryType = course.DeliveryType,
+            Status = course.Status,
+            CategoryId = course.CategoryId
+        };
     }
 }
