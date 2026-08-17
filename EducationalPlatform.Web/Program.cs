@@ -1,6 +1,5 @@
 using EducationalPlatform.Application.Common.Behaviors;
 using EducationalPlatform.Application.Features.Courses.Commands.CreateCourse;
-using EducationalPlatform.Application.Features.Courses.Commands.CreateCourse;
 using EducationalPlatform.Application.Interfaces;
 using EducationalPlatform.Infrastructure.Data;
 using EducationalPlatform.Infrastructure.Identity;
@@ -9,7 +8,6 @@ using EducationalPlatform.Infrastructure.Persistence;
 using EducationalPlatform.Infrastructure.Repositories;
 using EducationalPlatform.Infrastructure.Services;
 using EducationalPlatform.Web.Components;
-using FluentValidation;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;

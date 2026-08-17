@@ -218,10 +218,10 @@ C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\D
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\Educatio.D0078E69.Up2Date
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\EducationalPlatform.Web.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\refint\EducationalPlatform.Web.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\EducationalPlatform.Web.pdb
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\EducationalPlatform.Web.genruntimeconfig.cache
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\ref\EducationalPlatform.Web.dll
-C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
