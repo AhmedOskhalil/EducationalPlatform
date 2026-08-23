@@ -1,5 +1,4 @@
-﻿using EducationalPlatform.Application.DTOs;
-using EducationalPlatform.Application.Interfaces;
+﻿using EducationalPlatform.Application.Interfaces;
 using EducationalPlatform.Domain.Entities;
 using FluentValidation;
 
