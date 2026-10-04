@@ -1,0 +1,187 @@
+﻿@page "/courses/create"
+@rendermode InteractiveServer
+
+@using EducationalPlatform.Application.Features.Categories.Queries.GetCategories
+@using EducationalPlatform.Application.Features.Courses.Commands.CreateCourse
+@using EducationalPlatform.Domain.Entities
+@using EducationalPlatform.Domain.Enums
+@using MediatR
+@using FluentValidation
+@inject IMediator Mediator
+
+<h3>Create Course</h3>
+
+<EditForm Model="@model" OnValidSubmit="@CreateCourse">
+    <DataAnnotationsValidator />
+
+    <div>
+        <label>Title</label>
+        <InputText @bind-Value="model.Title" />
+        @if (validationErrors.TryGetValue("Title", out var titleError))
+        {
+            <div class="text-danger">@titleError</div>
+        }
+    </div>
+
+    <div>
+        <label>Slug</label>
+        <InputText @bind-Value="model.Slug" />
+        <InputText @bind-Value="model.Slug" />
+
+        @if (validationErrors.TryGetValue("Slug", out var slugError))
+        {
+            <div class="text-danger">@slugError</div>
+        }
+    </div>
+
+    <div>
+        <label>Short Description</label>
+        <InputText @bind-Value="model.ShortDescription" />
+
+        @if (validationErrors.TryGetValue("ShortDescription", out var shortDescriptionError))
+        {
+            <div class="text-danger">@shortDescriptionError</div>
+        }
+    </div>
+
+    <div>
+        <label>Description</label>
+        <InputTextArea @bind-Value="model.Description" />
+        @if (validationErrors.TryGetValue("Description", out var descriptionError))
+        {
+            <div class="text-danger">@descriptionError</div>
+        }
+    </div>
+
+    <div>
+        <label>Price</label>
+        <InputNumber @bind-Value="model.Price" />
+        @if (validationErrors.TryGetValue("Price", out var priceError))
+        {
+            <div class="text-danger">@priceError</div>
+        }
+    </div>
+
+    <div>
+        <label>Category</label>
+
+        <InputSelect @bind-Value="model.CategoryId">
+            <option value="0">Select Category</option>
+
+            @foreach (var category in categories)
+            {
+                <option value="@category.Id">
+                    @category.Name
+                </option>
+            }
+        </InputSelect>
+        @if (validationErrors.TryGetValue("CategoryId", out var categoryIdError))
+        {
+            <div class="text-danger">@categoryIdError</div>
+        }
+    </div>
+
+    <div>
+        <label>Difficulty</label>
+
+        <InputSelect @bind-Value="model.Difficulty">
+            @foreach (var difficulty in Enum.GetValues<CourseDifficulty>())
+            {
+                <option value="@difficulty">
+                    @difficulty
+                </option>
+            }
+        </InputSelect>
+        @if (validationErrors.TryGetValue("Difficulty", out var difficultyError))
+        {
+            <div class="text-danger">@difficultyError</div>
+        }
+    </div>
+
+    <div>
+        <label>Delivery Type</label>
+
+        <InputSelect @bind-Value="model.DeliveryType">
+            @foreach (var deliveryType in Enum.GetValues<CourseDeliveryType>())
+            {
+                <option value="@deliveryType">
+                    @deliveryType
+                </option>
+            }
+        </InputSelect>
+        @if (validationErrors.TryGetValue("DeliveryType", out var deliveryTypeeError))
+        {
+            <div class="text-danger">@deliveryTypeeError</div>
+        }
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        Create Course
+    </button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <p>@message</p>
+}
+
+@code {
+    private readonly CourseFormModel model = new();
+
+    private IReadOnlyList<Category> categories = [];
+
+    private Dictionary<string, string> validationErrors = new();
+
+    private string message = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await Mediator.Send(new GetCategoriesQuery());
+    }
+
+    private async Task CreateCourse()
+    {
+        message = string.Empty;
+
+        try
+        {
+            var command = new CreateCourseCommand(
+                model.Title,
+                model.Slug,
+                model.ShortDescription,
+                model.Description,
+                model.Price,
+                model.CategoryId,
+                model.Difficulty,
+                model.DeliveryType);
+
+            var result = await Mediator.Send(command);
+
+            message = result.Message;
+        }
+        catch (ValidationException ex)
+        {
+            validationErrors = ex.Errors.GroupBy(error => error.PropertyName).ToDictionary( group => group.Key, group => group.First().ErrorMessage);
+            message = string.Empty;
+        }
+    }
+
+    private class CourseFormModel
+    {
+        public string Title { get; set; } = string.Empty;
+
+        public string Slug { get; set; } = string.Empty;
+
+        public string ShortDescription { get; set; } = string.Empty;
+
+        public string Description { get; set; } = string.Empty;
+
+        public decimal Price { get; set; }
+
+        public int CategoryId { get; set; }
+
+        public CourseDifficulty Difficulty { get; set; }
+
+        public CourseDeliveryType DeliveryType { get; set; }
+    }
+}

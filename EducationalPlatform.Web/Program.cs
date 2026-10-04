@@ -1,13 +1,18 @@
+using EducationalPlatform.Application.Common.Behaviors;
+using EducationalPlatform.Application.Features.Courses.Commands.CreateCourse;
+using EducationalPlatform.Application.Interfaces;
 using EducationalPlatform.Infrastructure.Data;
 using EducationalPlatform.Infrastructure.Identity;
 using EducationalPlatform.Infrastructure.Identity.Seed;
+using EducationalPlatform.Infrastructure.Persistence;
+using EducationalPlatform.Infrastructure.Repositories;
+using EducationalPlatform.Infrastructure.Services;
 using EducationalPlatform.Web.Components;
+using FluentValidation;
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MediatR;
 using System.Reflection;
-using EducationalPlatform.Application.Interfaces;
-using EducationalPlatform.Infrastructure.Services;
 
 namespace EducationalPlatform.Web
 {
@@ -48,6 +53,10 @@ namespace EducationalPlatform.Web
             builder.Services.AddAuthorization();
 
             builder.Services.AddScoped<ICourseService, CourseService>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+
+            builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             builder.Services.ConfigureApplicationCookie(options =>
             {
@@ -60,9 +69,15 @@ namespace EducationalPlatform.Web
                 options.ExpireTimeSpan = TimeSpan.FromDays(30);
             });
 
+            builder.Services.AddValidatorsFromAssembly(typeof(CreateCourseCommandValidator).Assembly);
+
             builder.Services.AddMediatR(cfg =>
             {
-                cfg.RegisterServicesFromAssembly(typeof(EducationalPlatform.Application.Interfaces.IRepository<>).Assembly);
+                cfg.RegisterServicesFromAssembly(
+                    typeof(EducationalPlatform.Application.Interfaces.IRepository<>).Assembly);
+
+                cfg.AddOpenBehavior(
+                    typeof(ValidationBehavior<,>));
             });
 
             var app = builder.Build();
@@ -73,9 +88,11 @@ namespace EducationalPlatform.Web
 
                 var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
                 var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+                var dbContext = services.GetRequiredService<ApplicationDbContext>();
 
                 await RoleSeeder.SeedAsync(roleManager);
                 await AdminSeeder.SeedAsync(userManager);
+                await CategorySeeder.SeedAsync(dbContext);
             }
 
             // Configure the HTTP request pipeline.
@@ -95,6 +112,7 @@ namespace EducationalPlatform.Web
             app.MapStaticAssets();
             app.MapRazorComponents<App>()
                 .AddInteractiveServerRenderMode();
+            
 
             await app.RunAsync();
         }

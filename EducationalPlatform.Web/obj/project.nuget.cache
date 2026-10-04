@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pxrIqPKT46U=",
+  "dgSpecHash": "M6XXt5aqZqw=",
   "success": true,
   "projectFilePath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,6 @@
     "C:\\Users\\DELL\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\mediatr\\14.2.0\\mediatr.14.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.7\\microsoft.aspnetcore.app.internal.assets.10.0.7.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\10.0.10\\microsoft.aspnetcore.components.authorization.10.0.10.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.10.nupkg.sha512",
@@ -63,6 +62,15 @@
   ],
   "logs": [
     {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "Problem reading the cache file D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
+      "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
+      "targetGraphs": []
+    },
+    {
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference Microsoft.AspNetCore.Components.Authorization will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
@@ -70,18 +78,6 @@
       "warningLevel": 1,
       "filePath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
       "libraryId": "Microsoft.AspNetCore.Components.Authorization",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 14.2.0 was resolved.",
-      "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
-      "libraryId": "MediatR",
       "targetGraphs": [
         "net10.0"
       ]

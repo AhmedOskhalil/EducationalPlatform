@@ -4,5 +4,6 @@ public enum CourseDeliveryType
 {
     Recorded = 1,
     Live = 2,
-    Hybrid = 3
+    Hybrid = 3,
+    Online = 4,
 }
