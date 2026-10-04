@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj": {}
+    "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
+    "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
+        "projectUniqueName": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
         "projectName": "EducationalPlatform.Application",
-        "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
-        "packagesPath": "C:\\Users\\78sworks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\obj\\",
+        "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\78sworks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -34,8 +34,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj": {
-                "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj"
+              "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj": {
+                "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj"
               }
             }
           }
@@ -50,7 +50,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -372,20 +372,20 @@
         }
       }
     },
-    "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj": {
+    "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj",
+        "projectUniqueName": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj",
         "projectName": "EducationalPlatform.Domain",
-        "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj",
-        "packagesPath": "C:\\Users\\78sworks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\obj\\",
+        "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\78sworks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -414,7 +414,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -442,7 +442,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -720,20 +720,20 @@
         }
       }
     },
-    "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj": {
+    "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj",
         "projectName": "EducationalPlatform.Infrastructure",
-        "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\78sworks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\obj\\",
+        "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\78sworks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -750,11 +750,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
-                "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj"
+              "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
+                "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj"
               },
-              "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj": {
-                "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj"
+              "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj": {
+                "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Domain\\EducationalPlatform.Domain.csproj"
               }
             }
           }
@@ -769,7 +769,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -821,7 +821,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1099,20 +1099,20 @@
         }
       }
     },
-    "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj": {
+    "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
+        "projectUniqueName": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
         "projectName": "EducationalPlatform.Web",
-        "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
-        "packagesPath": "C:\\Users\\78sworks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\obj\\",
+        "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\78sworks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1129,11 +1129,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
-                "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj"
+              "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
+                "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj"
               },
-              "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj"
+              "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj": {
+                "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj"
               }
             }
           }
@@ -1148,7 +1148,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -1162,7 +1162,7 @@
             "Microsoft.AspNetCore.App.Internal.Assets": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.10, )",
+              "version": "[10.0.7, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Components.Authorization": {
@@ -1195,7 +1195,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

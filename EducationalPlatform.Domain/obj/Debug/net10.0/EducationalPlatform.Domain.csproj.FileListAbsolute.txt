@@ -11,3 +11,16 @@ C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\ob
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\refint\EducationalPlatform.Domain.dll
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.pdb
 C:\Users\78sworks\source\repos\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\ref\EducationalPlatform.Domain.dll
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.deps.json
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.dll
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\bin\Debug\net10.0\EducationalPlatform.Domain.pdb
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.csproj.AssemblyReference.cache
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.AssemblyInfoInputs.cache
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.AssemblyInfo.cs
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.csproj.CoreCompileInputs.cache
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.sourcelink.json
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.dll
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\refint\EducationalPlatform.Domain.dll
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\EducationalPlatform.Domain.pdb
+D:\Work\MyProjects\EducationalPlatform\EducationalPlatform.Domain\obj\Debug\net10.0\ref\EducationalPlatform.Domain.dll

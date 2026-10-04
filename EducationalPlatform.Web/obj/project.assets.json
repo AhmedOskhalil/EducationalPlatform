@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net10.0": {
       "AutoMapper/12.0.1": {
@@ -147,7 +147,7 @@
           "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.AspNetCore.App.Internal.Assets/10.0.10": {
+      "Microsoft.AspNetCore.App.Internal.Assets/10.0.7": {
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.App.Internal.Assets.props": {},
@@ -1376,10 +1376,10 @@
         "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.App.Internal.Assets/10.0.10": {
-      "sha512": "8k0KoYKvNrSqP8E3oDJMBVKavlTEE6BacdLGtEDcxv9Hz0XxWFkD6JdLJsxXUlGeAfZ6YfvWmxKenl73qeCTSA==",
+    "Microsoft.AspNetCore.App.Internal.Assets/10.0.7": {
+      "sha512": "ao3i+ks0uOQ7FWacI1hqHkUczebmXrGkUB63Xhkc34QbSzG9nYBlDv9v5l6rtCrHMsDW+13kZlpJrSj1HXddqg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.app.internal.assets/10.0.10",
+      "path": "microsoft.aspnetcore.app.internal.assets/10.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1395,7 +1395,7 @@
         "build/Microsoft.AspNetCore.App.Internal.Assets.targets",
         "buildMultiTargeting/Microsoft.AspNetCore.App.Internal.Assets.targets",
         "buildTransitive/Microsoft.AspNetCore.App.Internal.Assets.targets",
-        "microsoft.aspnetcore.app.internal.assets.10.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.app.internal.assets.10.0.7.nupkg.sha512",
         "microsoft.aspnetcore.app.internal.assets.nuspec"
       ]
     },
@@ -3412,29 +3412,29 @@
       "EducationalPlatform.Application >= 1.0.0",
       "EducationalPlatform.Infrastructure >= 1.0.0",
       "FluentValidation.DependencyInjectionExtensions >= 12.1.1",
-      "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.10",
+      "Microsoft.AspNetCore.App.Internal.Assets >= 10.0.7",
       "Microsoft.AspNetCore.Components.Authorization >= 10.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.10"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\78sworks\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
+      "projectUniqueName": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
       "projectName": "EducationalPlatform.Web",
-      "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
-      "packagesPath": "C:\\Users\\78sworks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Web\\obj\\",
+      "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\EducationalPlatform.Web.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\78sworks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3451,11 +3451,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
-              "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj"
+            "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj": {
+              "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj"
             },
-            "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\78sworks\\source\\repos\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj"
+            "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj": {
+              "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Infrastructure\\EducationalPlatform.Infrastructure.csproj"
             }
           }
         }
@@ -3470,7 +3470,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -3484,7 +3484,7 @@
           "Microsoft.AspNetCore.App.Internal.Assets": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.10, )",
+            "version": "[10.0.7, )",
             "autoReferenced": true
           },
           "Microsoft.AspNetCore.Components.Authorization": {
@@ -3517,7 +3517,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
