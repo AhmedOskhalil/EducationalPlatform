@@ -28,15 +28,6 @@
   ],
   "logs": [
     {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
-      "targetGraphs": []
-    },
-    {
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",

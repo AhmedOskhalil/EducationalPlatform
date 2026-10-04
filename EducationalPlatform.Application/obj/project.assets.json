@@ -1280,12 +1280,6 @@
   },
   "logs": [
     {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
-    },
-    {
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
