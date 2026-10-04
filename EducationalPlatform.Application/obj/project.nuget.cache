@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nQ+8rfYLf/o=",
+  "dgSpecHash": "Iah204wP6vc=",
   "success": true,
   "projectFilePath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DELL\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
@@ -28,9 +28,9 @@
   ],
   "logs": [
     {
-      "code": "NU1903",
+      "code": "NU1608",
       "level": "Warning",
-      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "message": "Detected package version outside of dependency constraint: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requires AutoMapper (= 12.0.1) but version AutoMapper 16.2.0 was resolved.",
       "projectPath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
       "warningLevel": 1,
       "filePath": "D:\\Work\\MyProjects\\EducationalPlatform\\EducationalPlatform.Application\\EducationalPlatform.Application.csproj",
